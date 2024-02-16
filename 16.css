@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mitr', sans-serif;
+}
+
+body{
+    background: radial-gradient(#e76fcd,20%, #82c0ff);
+}
+
+header{
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 17px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+ul li.active a{
+    background-color: white;
+    color: black;
+}
+
+.eeeee{
+    display: flex;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    height: 100vh;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+}
+
+.card{
+    height: 350px;
+    margin: 60px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+img{
+    height: 350px;
+    width: 350px;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.intro{
+    height: 90px;
+    width: 350px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -100px;
+    background: rgb(27, 27, 27 , .5);
+    color: white;
+    transition: .5s;
+}
+
+h1{
+    margin: 10px;
+    font-size: 28px;
+    text-align: center;
+}
+
+p{
+    font-size: 16px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .intro{
+    height: 120px;
+    bottom: -40px;
+    background: black;
+}
+
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
